@@ -85,7 +85,7 @@ export const MainPanel = () => {
             }`}
           >
             <Zap size={18} className={isOptimizing ? "animate-pulse" : "text-emerald-500"} />
-            <span>{isOptimizing ? "Optimizing Fleet..." : "Run Optimization"}</span>
+            <span>{isOptimizing ? "Optimizing Fleet..." : "Run AI Optimization"}</span>
           </motion.button>
         </div>
         
