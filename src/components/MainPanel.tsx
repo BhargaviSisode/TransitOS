@@ -55,7 +55,7 @@ export const MainPanel = () => {
               type="text" 
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search routes or buses..." 
+             placeholder="Search routes, buses, or transit zones..."
               className="pl-11 pr-4 py-3 bg-white dark:bg-[#1C212C] border-none rounded-2xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20 w-72 soft-shadow text-gray-900 dark:text-[#E6EAF0] placeholder-gray-400 transition-all duration-300 group-hover:w-80"
             />
             <Search className="w-5 h-5 text-gray-400 absolute left-4 top-3 transition-colors group-focus-within:text-emerald-500" />
