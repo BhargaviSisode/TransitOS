@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Custom Colors for Soft UI - Updated Palette */
+  --color-soft-bg: #FFFFFF;
+  --color-soft-card: #FFFFFF;
+  --color-soft-panel: #E4E8ED;
+  
+  --color-soft-mint: #B8EAD9;
+  --color-soft-mint-dark: #7ED6C2;
+  --color-soft-lavender: #D8CFF7;
+  --color-soft-lavender-dark: #B8A9EE;
+  --color-soft-blue: #D9E7FF;
+  
+  --color-text-primary: #1C1F24;
+  --color-text-secondary: #6B7380;
+  --color-text-muted: #9AA3AD;
+  
+  --color-border-subtle: #E2E6EA;
+  
+  --color-icon: #6C7684;
+  --color-icon-active: #1C1F24;
+  
+  --color-btn-default: #F2F4F7;
+  --color-btn-active: #B8EAD9;
+
+  /* Dark Mode Equivalents */
+  --color-dark-bg: #576480;
+  --color-dark-card: #576480;
+}
+
+html, body, #root {
+  background-color: #FFFFFF !important;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #FFFFFF;
+  color: var(--color-text-primary);
+}
+
+.dark body {
+  background-color: var(--color-dark-bg);
+  color: #F9FAFB;
+}
+
+/* Soft Neumorphic Utilities */
+@utility soft-shadow {
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.06);
+}
+
+.soft-card {
+  @apply bg-white dark:bg-gray-800 rounded-[18px] border border-white/50 dark:border-gray-700/50 backdrop-blur-sm;
+  box-shadow: 0 10px 40px -10px rgba(0,0,0,0.06);
+}
+
+.soft-button {
+  @apply px-4 py-2 rounded-[20px] transition-all duration-300 font-medium text-sm flex items-center justify-center;
+  background-color: var(--color-btn-default);
+  color: var(--color-text-secondary);
+}
+
+.soft-button-active {
+  background-color: var(--color-btn-active);
+  color: var(--color-text-primary);
+  box-shadow: 0 4px 12px rgba(126,214,194,0.25);
+}
+
+.soft-button-inactive {
+  @apply hover:bg-white hover:text-gray-900;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #EEF1F4;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C9D1DA;
+  border-radius: 10px;
+  transition: all 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #AEB7C2;
+}
