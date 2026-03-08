@@ -1,20 +1,17 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# TransitOS – AI Urban Mobility Control Center
 
-# Run and deploy your AI Studio app
+TransitOS is a smart dashboard for monitoring and optimizing public transportation systems in real time.
 
-This contains everything you need to run your app locally.
+## Features
+- Fleet monitoring
+- Demand prediction
+- AI route optimization
+- Transit analytics
+- Map visualization
 
-View your app in AI Studio: https://ai.studio/apps/52ee82b2-afec-4615-8111-3d05795ac68b
+## Tech Stack
+React, TypeScript, Node.js, Gemini AI
 
 ## Run Locally
-
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+npm install  
+npm run dev
