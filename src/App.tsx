@@ -49,6 +49,10 @@ export default function App() {
     };
   }, [updateData]);
 
+  <footer style={{textAlign:"center",padding:"10px",opacity:0.6}}>
+  Hackathon Prototype – TransitOS
+</footer>
+
   return (
     <div className="flex h-screen w-full bg-white dark:bg-[#0F1218] overflow-hidden font-sans text-gray-900 dark:text-[#E6EAF0] antialiased selection:bg-blue-100 selection:text-blue-900">
       <LeftSidebar />
